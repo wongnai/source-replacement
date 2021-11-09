@@ -13,7 +13,6 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "release": "standard-version --release-as",
     "lint": "eslint --ext .ts,.js --quiet",
     "test": "jest --coverage"
   },
