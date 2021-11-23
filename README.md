@@ -26,5 +26,5 @@ import 'source-replacement'
 Enter page with the following example
 
 ```
-https://example.com/#replacementTarget=https://your-target-js-source-url
+https://example.com/#targetReplacementSource=https://your-target-js-source-url
 ```
