@@ -1,12 +1,13 @@
-import { REPLACED_KEY, REPLACEMENT_SOURCE_KEY } from 'debugConstants'
+import { REPLACEMENT_SOURCE_KEY } from 'debugConstants'
 import getTargetSource from 'utils/getTargetSource'
+import isReplacedPage from 'utils/isReplacedPage'
 import loadTargetSource from 'utils/loadTargetSource'
 import writeSourceToTargetPage from 'utils/writeSourceToTargetPage'
 
 async function replaceSourceWithTargetSource() {
     const targetSource = getTargetSource()
 
-    if (targetSource && !sessionStorage.getItem(REPLACED_KEY)) {
+    if (targetSource && !isReplacedPage(targetSource)) {
         console.log('Start replacing with ', targetSource)
 
         sessionStorage.setItem(REPLACEMENT_SOURCE_KEY, targetSource)
@@ -20,8 +21,6 @@ async function replaceSourceWithTargetSource() {
         sessionStorage.setItem(targetSource, source)
 
         writeSourceToTargetPage(source)
-
-        sessionStorage.setItem(REPLACED_KEY, 'true')
     }
 }
 
