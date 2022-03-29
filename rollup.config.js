@@ -12,11 +12,14 @@ export default {
   input: config.entry,
   output: {
     dir: config.deploy,
-    format: 'iife',
+    format: 'umd',
     sourcemap: true,
+    name: 'SourceReplacement'
   },
   plugins: [
-    resolve(),
+    resolve({
+      browser: true,
+    }),
     commonjs(),
     typescript({
       declaration: true,
