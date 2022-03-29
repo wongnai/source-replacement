@@ -13,10 +13,9 @@ function startDevTool() {
             sessionStorage.setItem(REPLACEMENT_SOURCE_KEY, target!)
         } else {
             sessionStorage.removeItem(REPLACEMENT_SOURCE_KEY)
-            location.reload()
         }
 
-        replaceSourceWithTargetSource()
+        location.reload()
 
         shakeDetector.stop()
     }).start()
