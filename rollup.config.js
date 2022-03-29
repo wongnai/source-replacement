@@ -12,7 +12,7 @@ export default {
   input: config.entry,
   output: {
     dir: config.deploy,
-    format: 'esm',
+    format: 'umd',
     sourcemap: true,
   },
   plugins: [
