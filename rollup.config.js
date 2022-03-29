@@ -12,7 +12,7 @@ export default {
   input: config.entry,
   output: {
     dir: config.deploy,
-    format: 'umd',
+    format: 'iife',
     sourcemap: true,
   },
   plugins: [
