@@ -6,6 +6,7 @@ describe('writeSourceToTargetPage', () => {
         const openSpy = jest.spyOn(document, 'open').mockImplementation(() => {})
         const writeSpy = jest.spyOn(document, 'write').mockImplementation(() => {})
         const closeSpy = jest.spyOn(document, 'close').mockImplementation(() => {})
+        const stopSpy = jest.spyOn(window, 'stop').mockImplementation(() => {})
 
         const MOCK_SOURCE = '<html />'
 
@@ -14,5 +15,6 @@ describe('writeSourceToTargetPage', () => {
         expect(openSpy).toBeCalledTimes(1)
         expect(writeSpy).toBeCalledWith(MOCK_SOURCE)
         expect(closeSpy).toBeCalledTimes(1)
+        expect(stopSpy).toBeCalledTimes(1)
     })
 })
