@@ -12,13 +12,7 @@ async function replaceSourceWithTargetSource() {
 
         sessionStorage.setItem(REPLACEMENT_SOURCE_KEY, targetSource)
 
-        let source = sessionStorage.getItem(targetSource)
-
-        if (!source) {
-            source = await loadTargetSource(targetSource)
-        }
-
-        sessionStorage.setItem(targetSource, source)
+        const source = await loadTargetSource(targetSource)
 
         writeSourceToTargetPage(source)
     }
