@@ -8,8 +8,6 @@ function startDevTool() {
 
     shakeDetector.subscribe(() => {
         const target = prompt('Input your target replacement source url or leave it blank if no replacement wanted')
-
-        alert(`Source Replacement Starting with ${target}`)
         
         sessionStorage.setItem(REPLACEMENT_SOURCE_KEY, target!)
 
