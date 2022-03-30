@@ -1,7 +1,7 @@
 import placeLoadingPlaceholder from 'utils/placeLoadingPlaceholder'
 
 async function loadTargetSource(targetSourceUrl: string) {
-    placeLoadingPlaceholder()
+    placeLoadingPlaceholder(targetSourceUrl)
 
     const response = await fetch(targetSourceUrl)
 
