@@ -14,7 +14,9 @@ function startDevTool() {
         location.reload()
 
         shakeDetector.stop()
-    }).start()
+    }).confirmPermissionGranted().start()
+
+    shakeDetector.requestPermission().then(() => shakeDetector.start())
 }
 
 export default startDevTool

@@ -39,8 +39,6 @@ describe('startDevTool()', () => {
 
         listenerSpy()
 
-        expect(replaceSourceWithTargetSourceSpy).toBeCalledTimes(1)
-
         expect(stopSpy).toBeCalledTimes(1)
     })
 })
