@@ -19,7 +19,7 @@ yarn add source-replacement
 
 Attach `source-replacement/build/executors/source-replacement` on the script tag in `<head>` or mark it as `async type=module`
 
-In your source import `source-replacement/build/executors/code-blocker` to prevent executing your source during the process of replacement
+In your source import `source-replacement/build/code-blocker.js` to prevent executing your source during the process of replacement
 
 #### On your browser
 

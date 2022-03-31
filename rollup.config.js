@@ -28,8 +28,9 @@ export default [
 	{
 		input: 'src/executors/code-blocker/index.ts',
 		output: {
-			dir: config.deploy,
+			file: path.resolve(config.deploy, 'code-blocker.js'),
 			format: 'cjs',
+			sourcemap: true,
 		},
 		plugins: sharedPlugins
 	},
@@ -39,6 +40,7 @@ export default [
 			dir: config.deploy,
 			format: 'umd',
 			name: 'SourceReplacement',
+			sourcemap: true,
 		},
 		plugins: sharedPlugins,
 	},
