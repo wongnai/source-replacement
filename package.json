@@ -1,10 +1,9 @@
 {
   "name": "source-replacement",
-  "version": "0.0.0",
-  "main": "build/index.js",
-  "entry": "src/index.ts",
+  "version": "2.0.0",
   "types": "build",
   "deploy": "build",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/wongnai/source-replacement.git"
@@ -40,6 +39,7 @@
     "semantic-release": "18.0.0",
     "shake-detector": "0.3.7",
     "ts-jest": "27.0.7",
-    "typescript": "4.4.4"
+    "typescript": "4.4.4",
+    "vconsole": "3.14.3"
   }
 }
