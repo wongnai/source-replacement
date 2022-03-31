@@ -26,5 +26,5 @@ In your source import `source-replacement/build/executors/code-blocker` to preve
 Enter page with the following example
 
 ```
-https://example.com/#replacementTarget=https://your-target-js-source-url
+https://example.com/#targetReplacementSource=https://your-target-js-source-url
 ```
