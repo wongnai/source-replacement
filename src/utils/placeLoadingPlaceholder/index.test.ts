@@ -1,4 +1,4 @@
-describe('placeLoadingPlaceholder', () => {
+describe('placeLoadingPlaceholder()', () => {
 	const writeSourceToTargetPageSpy = jest.fn()
 
 	jest.doMock('utils/writeSourceToTargetPage', () => writeSourceToTargetPageSpy)

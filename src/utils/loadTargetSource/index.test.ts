@@ -1,4 +1,4 @@
-describe('loadTargetSource', () => {
+describe('loadTargetSource()', () => {
 	const placeLoadingPlaceholderSpy = jest.fn()
 	jest.doMock('utils/placeLoadingPlaceholder', () => placeLoadingPlaceholderSpy)
 

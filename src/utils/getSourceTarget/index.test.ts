@@ -1,6 +1,6 @@
 import getSourceTarget from '.'
 
-describe('getSourceTarget', () => {
+describe('getSourceTarget()', () => {
 	it('should return null no replacementTarget in hash and sessionStorage', () => {
 		expect(getSourceTarget()).toBeNull()
 	})

@@ -1,6 +1,6 @@
 import { REPLACEMENT_SOURCE_KEY } from 'debugConstants'
 
-describe('consumeSourceTarget', () => {
+describe('consumeSourceTarget()', () => {
 	const getReplacementTargetFromHashSpy = jest.fn()
 	jest.doMock('utils/getReplacementTargetFromHash', () => getReplacementTargetFromHashSpy)
 

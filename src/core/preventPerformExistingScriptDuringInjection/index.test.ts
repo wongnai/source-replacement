@@ -1,7 +1,7 @@
 import { REPLACEMENT_SOURCE_KEY } from 'debugConstants'
 import preventPerformExistingScriptDuringInjection from '.'
 
-describe('preventPerformExistingScriptDuringInjection', () => {
+describe('preventPerformExistingScriptDuringInjection()', () => {
 	const MOCK_URL = 'http://example.com'
 
 	const promptSpy = jest.spyOn(global, 'prompt').mockReturnValue(MOCK_URL)

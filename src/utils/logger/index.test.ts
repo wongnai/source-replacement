@@ -1,6 +1,6 @@
 import logger from '.'
 
-describe('logger', () => {
+describe('logger()', () => {
 	const warnSpy = jest.spyOn(console, 'warn')
 
 	const logSpy = jest.spyOn(console, 'log')

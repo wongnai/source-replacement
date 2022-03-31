@@ -1,6 +1,6 @@
 import writeSourceToTargetPage from '.'
 
-describe('writeSourceToTargetPage', () => {
+describe('writeSourceToTargetPage()', () => {
 	it('should open document for write source then close', () => {
 		// @ts-ignore
 		const openSpy = jest.spyOn(document, 'open').mockImplementation(() => {})
