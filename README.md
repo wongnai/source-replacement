@@ -7,6 +7,8 @@
 
 Module to enhance ability of source replacement for website
 
+Note: Not using this in production environment
+
 ## Installation
 
 ```
@@ -15,11 +17,9 @@ yarn add source-replacement
 
 ### Usage
 
-#### In your source
+Attach `source-replacement/build/executors/source-replacement` on the script tag in `<head>` or mark it as `async type=module`
 
-```
-import 'source-replacement'
-```
+In your source import `source-replacement/build/executors/code-blocker` to prevent executing your source during the process of replacement
 
 #### On your browser
 

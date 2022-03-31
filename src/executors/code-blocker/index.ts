@@ -1,0 +1,3 @@
+import preventPerformExistingScriptDuringInjection from 'core/preventPerformExistingScriptDuringInjection'
+
+preventPerformExistingScriptDuringInjection()

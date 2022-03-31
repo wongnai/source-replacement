@@ -1,11 +1,11 @@
 import placeLoadingPlaceholder from 'utils/placeLoadingPlaceholder'
 
 async function loadTargetSource(targetSourceUrl: string) {
-    placeLoadingPlaceholder(targetSourceUrl)
+	placeLoadingPlaceholder(targetSourceUrl)
 
-    const response = await fetch(targetSourceUrl)
+	const response = await fetch(targetSourceUrl)
 
-    return response.text()
+	return response.text()
 }
 
 export default loadTargetSource
