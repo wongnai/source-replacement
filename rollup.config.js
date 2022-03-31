@@ -26,6 +26,14 @@ const sharedPlugins = [
 
 export default [
   {
+    input: 'src/executors/code-blocker/index.ts',
+    output: {
+      dir: config.deploy,
+      format: 'cjs',
+    },
+    plugins: sharedPlugins
+  },
+  {
     input: 'src/executors/source-replacement/index.ts',
     output: {
       dir: config.deploy,
@@ -34,12 +42,4 @@ export default [
     },
     plugins: sharedPlugins,
   },
-  {
-    input: 'src/executors/code-blocker/index.ts',
-    output: {
-      dir: config.deploy,
-      format: 'cjs',
-    },
-    plugins: sharedPlugins
-  }
 ]

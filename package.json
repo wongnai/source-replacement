@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "types": "build",
   "deploy": "build",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/wongnai/source-replacement.git"
